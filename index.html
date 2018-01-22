@@ -11,19 +11,33 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav style="background: #191970;" role="navigation">
+
+  
+
+  <nav  style="background: #191970;" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" style="color: #F0F8FF;"  class="brand-logo">Sideon</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#" style="color: #F0F8FF;">Informações</a></li>
+        <li><a href="#index-banner" style="color: #F0F8FF;">Home</a></li>
+        <li><a href="#" style="color: #F0F8FF;">Serviços</a></li>
+        <li><a href="#contato-titulo" style="color: #F0F8FF;">Contato</a></li>
+        <li><a href="#" style="color: #F0F8FF;">Sobre</a></li>
+
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Login</a></li>  
-        <li><a href="#">Desenvolvimento</a></li>
-        <li><a href="#">Chame um Tecnico</a></li>
-        <li><a href="#">Mais Informações</a></li>
 
+         <li><a href="#!"><i class="material-icons">home</i>Home</a></li>
+          <li><div class="divider"></div></li>
+         <li><a href="#!"><i class="material-icons">account_circle</i>Cliente</a></li>
+         <li><a href="#!"><i class="material-icons">build</i>Serviços</a></li>
+         <li><a href="#!"><i class="material-icons">event_available</i>Calendario</a></li>
+  
+         <li><a href="#!"><i class="material-icons">file_download</i>Download</a></li>
+         <li><a href="#!"><i class="material-icons">contact_phone</i>Contato</a></li>
+         <li><a href="#!"><i class="material-icons">import_contacts</i>Sobre</a></li>
+
+      
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -38,7 +52,7 @@
           <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Contratar Agora!</a>
+          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Contratar Agora!</a>
         </div>
         <br><br>
 
@@ -102,11 +116,11 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contato</h4>
+          <h4 >Contato</h4>
 
 
-<div class="row">
-    <form class="col s12">
+<div class="row" id="contato-titulo">
+    <form onsubmit="validar(event);" class="col s12">
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
@@ -124,7 +138,9 @@
           <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
           <label for="icon_prefix2">Deixe uma Mensagem</label>
         </div>
-<button class="btn waves-effect waves-light" style="background:#191970;" type="submit" name="action">Enviar
+
+ 
+<button class="btn waves-effect waves-light" onclick="Materialize.toast('Enviado com Sucesso!', 4000)" style="background:#191970;" type="submit" name="action">Enviar
     <i class="material-icons right">send</i>
   </button>
       </div>
@@ -180,6 +196,13 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script>
+
+  	  function validar(event){
+  	  	event.preventDefault();
+
+  	  }
+  </script>
 
   </body>
 </html>
