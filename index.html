@@ -14,12 +14,15 @@
 
   
 <div class="navbar-fixed">
-  <nav  style="background: #191970;" role="navigation">
+  <nav  style="background: #ff0000ff;" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" style="color: #F0F8FF;"  class="brand-logo">Sideon</a>
+      <a id="logo-container" href="#" style="color: #F0F8FF;"  class="brand-logo">
+        
+        <img src="./images/logo.png" height="60" width="120">
+      </a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#index-banner" style="color: #F0F8FF;">Home</a></li>
-        <li><a href="#" style="color: #F0F8FF;">Serviços</a></li>
+        <li><a href="#servico-sobre" style="color: #F0F8FF;">Serviços</a></li>
         <li><a href="#contato-titulo" style="color: #F0F8FF;">Contato</a></li>
         <li><a href="#" style="color: #F0F8FF;">Sobre</a></li>
 
@@ -47,7 +50,9 @@
     <div class="section no-pad-bot">
       
     </div>
-    <div class="parallax"><img src="bg.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="./images/bg.jpg" alt="Unsplashed background img 1"></div>
+    <div id="servico-sobre"></div>
+
   </div>
 
 
@@ -55,33 +60,46 @@
     <div class="section">
 
       <!--   Icon Section   -->
-      <div class="row">
+      <div   class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Prazos de serviços</h5>
-            <p class="light">Após todo orçamento passado ao cliente e o mesmo ter autorizado, será dado prazo de até 30 dias para conclusão dos serviços técnicos, para entrega de softwares ou aplicações com especificaçães do cliente prazo poderá ser ajustado de acordo com complexidade da aplicação de até 60 dias no maxímo ou cancelamento do serviço, entre em contao para mais informações.</p>
+            <h2 class="center red-text"><i class="material-icons">chat</i></h2>
+            <h5 class="center">Contato ou Sugestões</h5>
+            <p class="light center">
+              Queremos saber sua opinião e sugestões, entre em contato conosco
+              e nos escreva uma mensagem toda ajuda é bem-vinda.
+              Caso tenha interesse em contribuir com nossos projetos ou queira 
+              trabalhar conosco o processo é mesmo basta entrar em contato e aguarda
+              nosso breve retorno.
+            </p>
           </div> 
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h2 class="center red-text"><i class="material-icons">group</i></h2>
             <h5 class="center">Conheça nossa Equipe</h5>
 
-            <p class="light">Nossa equipe é composta por profissionais qualificados em tecnlogia da informação
-            técnicos e Proramadores, que visam inovar com essa nova iniciativa de atender uma deficiência 
-            no mercado de TI abrindo oportunidade de pequenos ou grandes empreendedores conratarem uma equipe em gestão de TI sem burocracia.</p>
+            <p class="light center">
+              Nossa equipe é composta atualmente de um único desenvolvedor, 
+              podendo ser ampliada para mais pessoas futuramente caso tenha 
+              duvidas mais técnicas por favor entre em contato com
+               <a href="https://rafa-mkr2.github.io/Rafael-programador/">Rafael D.Carmo</a>. 
+                Assim que possível nosso desenvolvedor irá sanar qualquer duvida ou problema 
+                reportado.  
+              </p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Como nós trabalhamos</h5>
+            <h2 class="center red-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Sobre a extensão</h5>
 
-            <p class="light">Temos diversos serviço que vão atender desde usuario comum até empresário Microempreendedor que necessita de uma pequena equipe gerenciando seu pequeno setor de TI.
-            Garantimos toda infraestrutura necessária para funcionamento de seu setup</p>
+            <p class="center light">A extensão Skipads foi criada unicamente para aumentar e sua produtividade ou entretenimento no na plataforma You Tube,
+              basicamente essa ferramenta irá saltar videos de anúncios e remover aqueles banner de propagandas que aparecem no meio do video, tudo isso
+              de forma simples e sem afetar desempenho do carregamento do seu video.
+            </p>
           </div>
         </div>
       </div>
@@ -94,11 +112,11 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">Agora você pode assistir sem ser interrompido por anúncios irrelevantes</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="image.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="./images/image.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -115,23 +133,23 @@
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
+          <input id="icon_prefix" type="text" class="validate" required>
           <label for="icon_prefix">Nome Completo</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">phone</i>
-          <input id="icon_telephone" type="number" class="validate">
+          <input id="icon_telephone" type="number" class="validate" required>
           <label for="icon_telephone">Telefone</label>
         </div>
 
 <div class="input-field col s12">
           <i class="material-icons prefix">mode_edit</i>
-          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <textarea id="icon_prefix2" class="materialize-textarea" required></textarea>
           <label for="icon_prefix2">Deixe uma Mensagem</label>
         </div>
 
  
-<button class="btn waves-effect waves-light" onclick="Materialize.toast('Enviado com Sucesso!', 4000)" style="background:#191970;" type="submit" name="action">Enviar
+<button class="btn waves-effect waves-light" onclick="Materialize.toast('Enviado com Sucesso!', 4000)" style="background:#ff0000ff;" type="submit" name="action">Enviar
     <i class="material-icons right">send</i>
   </button>
       </div>
@@ -146,38 +164,38 @@
   </div>
 
 
-  <footer  style="background:#191970;" class="page-footer">
-    <div style="background:#191970;" class="container">
+  <footer  style="background:#ff0000ff;" class="page-footer">
+    <div style="background:#ff0000ff;" class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Sobre nós:</h5>
-          <p class="grey-text text-lighten-4">Somos uma empresa com uma iniciativa privada que visa suprir mercado de TI fundada por um grupo de profissionais qualificados que buscam inovar mercado atual.</p>
+          <p class="grey-text text-lighten-4">
+            Somos uma empresa sem fins lucrativo com único intuito de criar 
+            ferramentas e soluções simples para facilitar sua navegação na web.
+            Se você gosta nosso trabalho e usa uma de nossas ferramentas considere
+            nos ajudar contribuindo com sugestões, criticas ou gorjeta para nosso time.
+          </p>
 
 
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Equipe</h5>
           <ul>
-            <li><a class="white-text" href="#!">Wilson Menezes</a></li>
-            <li><a class="white-text" href="#!">Marcos Cesar</a></li>
-            <li><a class="white-text" href="#!">Rafael D.Carmo</a></li>
-            <li><a class="white-text" href="#!">Yvo Rodríguez</a></li>
+            <li><a class="white-text" href="https://rafa-mkr2.github.io/Rafael-programador/">Rafael D.Carmo</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Redes Sociais</h5>
           <ul>
-            <li><a class="white-text" href="https://www.facebook.com/sideonoficial/">Facebook</a></li>
-            <li><a class="white-text" href="#!">Gmail</a></li>
-            <li><a class="white-text" href="#!">Whatsapp</a></li>
-            <li><a class="white-text" href="#!">Linkdin</a></li>
+
+            <li><a class="white-text" href="https://www.linkedin.com/in/rafaelmkr/">Linkedin</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Sideon &reg; <a class="brown-text text-lighten-3" href="http://materializecss.com">2018</a>
+      Skipads &reg; <a class="brown-text text-lighten-3" href="http://materializecss.com">2022</a>
       </div>
     </div>
   </footer>
@@ -187,13 +205,39 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  <script>
+  <script type="module">
+
+
+
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAujilP5eVGNLAjer_S-_dAhKNZyI0XeHk",
+    authDomain: "portifolio-rafael-a08dd.firebaseapp.com",
+    projectId: "portifolio-rafael-a08dd",
+    storageBucket: "portifolio-rafael-a08dd.appspot.com",
+    messagingSenderId: "48107599255",
+    appId: "1:48107599255:web:e37fb809390c08e12500d2",
+    measurementId: "G-DX4JSW681H"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
 
   	  function validar(event){
   	  	event.preventDefault();
 
   	  }
   </script>
+  
+
 
   </body>
 </html>
