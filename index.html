@@ -18,51 +18,58 @@
 <div class="navbar-fixed">
   <nav  style="background: #ff0000ff;" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" style="color: #F0F8FF;"  class="brand-logo">
+      <a id="logo-container" href="#" style="color: #F0F8FF; height: 100%;"  class="brand-logo">
         
-        <img src="./images/logo.png" height="60" width="120">
+        <img src="./images/hight.png" height="100%" width="100">
       </a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#index-banner" style="color: #F0F8FF;">Home</a></li>
         <li><a href="#servico-sobre" style="color: #F0F8FF;">Serviços</a></li>
         <li><a href="#contato-titulo" style="color: #F0F8FF;">Contato</a></li>
-        <li><a href="#" style="color: #F0F8FF;">Sobre</a></li>
+        <li><a href="#sobreNos" style="color: #F0F8FF;">Sobre</a></li>
 
       </ul>
 
      
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse" style="color: #F0F8FF;"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 </div>
 
  <ul id="nav-mobile" class="side-nav">
+   
 
-         <li><a href="#!"><i class="material-icons">home</i>Home</a></li>
+         <li><a href="#index-banner" class="close-sidenav"><i class="material-icons">home</i>Home</a></li>
           <li><div class="divider"></div></li>
-         <li><a href="#!"><i class="material-icons">build</i>Serviços</a></li>
-         <li><a href="#!"><i class="material-icons">event_available</i>Contato</a></li>
+         <li><a href="#servico-sobre" class="close-sidenav"><i class="material-icons">build</i>Serviços</a></li>
+         <li><a href="#servico-sobre" class="close-sidenav"><i class="material-icons">event_available</i>Contato</a></li>
   
-         <li><a href="#!"><i class="material-icons">file_download</i>Sobre</a></li>
+         <li><a href="#sobreNos"><i class="material-icons" class="close-sidenav">file_download</i>Sobre</a></li>
       
 
       
       </ul>
     <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
+    <div class="section no-pad-bot" >
       
     </div>
     <div class="parallax"><img src="./images/bg.jpg" alt="Unsplashed background img 1"></div>
-    <div id="servico-sobre"></div>
 
   </div>
 
 
   <div class="container">
-    <div class="section">
+    <div class="section" id="servico-sobre">
 
+      <br>    <br>    <br> <br> 
       <!--   Icon Section   -->
       <div   class="row">
+
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4 >Nossos Serviços</h4>
+        </div>
+        
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center red-text"><i class="material-icons">chat</i></h2>
@@ -121,16 +128,16 @@
     <div class="parallax"><img src="./images/image.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
-  <div class="container">
-    <div class="section">
-
+  <div class="container" id="contato-titulo">
+    <div class="section" >
+<br><br><br><br><br>
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4 >Contato</h4>
 
 
-<div class="row" id="contato-titulo">
+<div class="row">
     <form onsubmit="validar(event);" class="col s12">
       <div class="row">
         <div class="input-field col s6">
@@ -175,7 +182,7 @@
             Somos uma empresa sem fins lucrativo com único intuito de criar 
             ferramentas e soluções simples para facilitar sua navegação na web.
             Se você gosta nosso trabalho e usa uma de nossas ferramentas considere
-            nos ajudar contribuindo com sugestões, criticas ou gorjeta para nosso time.
+            nos ajudar contribuindo com sugestões, criticas ou financeira para nosso time.
           </p>
 
 
@@ -195,9 +202,9 @@
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
+    <div class="footer-copyright" id="sobreNos">
       <div class="container">
-      Skipads &reg; <a class="brown-text text-lighten-3" href="http://materializecss.com">2022</a>
+      Skipads &reg; <a class="brown-text text-lighten-3" href="#">2022</a>
       </div>
     </div>
   </footer>
@@ -207,35 +214,11 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  <script type="module">
+  <script>
 
-
-
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAujilP5eVGNLAjer_S-_dAhKNZyI0XeHk",
-    authDomain: "portifolio-rafael-a08dd.firebaseapp.com",
-    projectId: "portifolio-rafael-a08dd",
-    storageBucket: "portifolio-rafael-a08dd.appspot.com",
-    messagingSenderId: "48107599255",
-    appId: "1:48107599255:web:e37fb809390c08e12500d2",
-    measurementId: "G-DX4JSW681H"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-
-  	  function validar(event){
+  function validar(event){
   	  	event.preventDefault();
-
+        send()
   	  }
   </script>
   
